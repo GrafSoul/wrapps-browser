@@ -46,12 +46,13 @@ const createWindow = async () => {
             : `file://${path.join(__dirname, '../build/index.html')}`,
     );
 
-    mainWindow.setAlwaysOnTop(true);
+    mainWindow.setAlwaysOnTop(false);
 
     mainWindow.once('ready-to-show', () => {
         mainWindow.show();
         mainWindow.webContents.send(
             'urlOpen',
+            '',
             'Mnogo.uz',
             'http://video.mnogo.uz/',
         );

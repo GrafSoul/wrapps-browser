@@ -19,10 +19,13 @@ const App = () => {
 
     useEffect(() => {
         setWebview(document.querySelector('webview'));
-        ipcRenderer.on('urlOpen', (event, title, url) => {
-            if (url.length !== 0) {
-                setUrl(url);
+
+        ipcRenderer.on('urlOpen', (event, id, title, url) => {
+            let valid = /^(ftp|http|https):\/\/[^ "]+$/.test(url);
+            if (url.length !== 0 && valid) {
+                setId(id);
                 setTitle(title);
+                setUrl(url);
             }
         });
     }, []);
