@@ -18,14 +18,14 @@
 	}
 
 	.topbar {
-  	display: flex;
+  		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 0;
 		background-color: #21252b;
 		-webkit-app-region: drag;
 		border-bottom: 1px solid #3a3a3a;
-		transition: all .3s ease 0.8s;
+		transition: all ease 0.3s;
 		position: fixed;
 		top: -20px;
 		left: 0;
@@ -42,7 +42,7 @@
 			right:0;
 			left: 0;
 			z-index: 30;
-			transition: top .8s ease;
+			transition: top .3s ease;
 
 			&.up {
 				top: 38px;
