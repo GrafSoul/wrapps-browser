@@ -121,7 +121,7 @@ const App = () => {
                     <div>
                         <button
                             className={classes.btnWindow}
-                            onClick={handlerDevToolsWindow}
+                            onClick={() => handlerDevToolsWindow(id)}
                         >
                             <i className="fal fa-tools" />
                         </button>
