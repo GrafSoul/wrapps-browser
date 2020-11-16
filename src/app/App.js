@@ -81,8 +81,8 @@ const App = () => {
         setIsTop(!isTop);
     };
 
-    const handlerDevToolsWindow = () => {
-        ipcRenderer.send('on-devtools');
+    const handlerDevToolsWindow = (id) => {
+        ipcRenderer.send('on-devtools', id);
     };
 
     const top = [classes.webviewContainer, topbar ? classes.up : ''];

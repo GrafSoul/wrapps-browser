@@ -82,7 +82,7 @@ ipcMain.on('on-top-browser', (event, id, args) => {
     mainWindow.setAlwaysOnTop(args);
 });
 
-ipcMain.on('on-devtools', (event) => {
+ipcMain.on('on-devtools', (event, id) => {
     mainWindow.openDevTools();
 });
 
