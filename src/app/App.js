@@ -11,7 +11,7 @@ const App = () => {
     // eslint-disable-next-line
     const [id, setId] = useState('');
     const [title, setTitle] = useState('Wrapps Browser');
-    const [url, setUrl] = useState('https://google.com');
+    const [url, setUrl] = useState('');
     const [isLoading, setLoading] = useState(false);
     const [topbar, setTopbar] = useState(false);
     const [isTop, setIsTop] = useState(false);
